@@ -28,6 +28,13 @@ public class JwtAuthenticationController {
     @Autowired
     JwtTokenUtil jwtTokenUtil;
 
+    /**
+     * Authentication method API
+     *
+     * @param authenticationRequest
+     * @return
+     * @throws Exception
+     */
     @PostMapping(value = "/authenticate")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody @NotNull UserDTO authenticationRequest) throws Exception {
 
